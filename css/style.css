@@ -460,6 +460,7 @@ footer p {
 
     /* HEADER */
     
+
     header .navbar {
         flex-wrap: wrap;
         justify-content: center;
@@ -553,6 +554,8 @@ footer p {
     header .logo .logo__img {
         width: 7rem;
 
+    }
+
     /* MAIN HOME */
     
     .main .main__img {
@@ -569,6 +572,31 @@ footer p {
         width: 20rem;
     }
 
+    /* Productos  */
+
+    .products {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        margin: 0 3rem;
+    }
+
+    .article .article__information {
+        height: 8rem;
+    }
+
+    .article .article__name {
+        font-size: 1.9em;
+    }
+    .article .article__price {
+        font-size: 1.9em;
+    }
+
+    .grafico {
+        display: none;
+    }
     /* SERVICES */
 
     .container-services {
