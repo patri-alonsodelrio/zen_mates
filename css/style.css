@@ -30,7 +30,8 @@ html {
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    background-color: var(--principal);
+    background-image: linear-gradient(to right bottom, #f1f1f1, #f4f4f4, #f8f8f8, #fbfbfb, #ffffff);
+    /* background-color: var(--principal); SOLO LO COMENTO PARA USAR GRADIENTES */
     min-height: 100vh;
 }
 
