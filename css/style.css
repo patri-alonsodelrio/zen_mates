@@ -363,7 +363,8 @@ header .menu .menu__item a {
 /* Formulario Contacto */
 
 .formulario {
-    background-color: var(--font-grey);
+    /* background-color: var(--font-grey);  LO COMENTO PARA DESAFIO*/
+    background-image: linear-gradient(to bottom, #999595, #8a8686, #7a7878, #6b6a6a, #5d5c5c);
     width: min( 60rem, 100% );
     margin: 0 auto;
     padding: 2rem;
