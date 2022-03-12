@@ -110,7 +110,7 @@ header .logo {
 }
 
 header .logo .logo__img {
-    width: 7rem;
+    width: 4rem;
     padding: 1rem 0;
 }
 
@@ -459,9 +459,9 @@ footer p {
 
     /* HEADER */
     
-    header {
+    /* header {
         padding: 2rem 0;
-    }
+    } */
 
     header .navbar {
         flex-wrap: wrap;
@@ -551,6 +551,10 @@ footer p {
     header .menu {
         flex-direction: column;
         align-items: center;
+    }
+
+    header .logo .logo__img {
+        width: 7rem;
     }
 
     /* MAIN HOME */
