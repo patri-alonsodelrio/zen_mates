@@ -364,7 +364,8 @@ header .menu .menu__item a {
 /* Formulario Contacto */
 
 .formulario {
-    background-color: var(--font-grey);
+    /* background-color: var(--font-grey);  LO COMENTO PARA DESAFIO*/
+    background-image: linear-gradient(to bottom, #999595, #8a8686, #7a7878, #6b6a6a, #5d5c5c);
     width: min( 60rem, 100% );
     margin: 0 auto;
     padding: 2rem;
@@ -553,7 +554,6 @@ footer p {
 
     header .logo .logo__img {
         width: 7rem;
-
     }
 
     /* MAIN HOME */
@@ -602,6 +602,31 @@ footer p {
     .container-services {
         display: flex;
         flex-direction: column;
+    }
+
+    /* Productos  */
+
+    .container {
+        margin: 0 2rem  ;
+    }
+
+    .products {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .products .article__information {
+        height: 7rem;
+    }
+
+    .products .article__name, 
+    .products .article__price {
+        font-size: 1.9em;
+    }
+
+
+    .grafico {
+        display: none;
     }
 
     /* NOSOTROS */
