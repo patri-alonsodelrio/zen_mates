@@ -580,6 +580,31 @@ footer p {
         flex-direction: column;
     }
 
+    /* Productos  */
+
+    .container {
+        margin: 0 2rem  ;
+    }
+
+    .products {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .products .article__information {
+        height: 7rem;
+    }
+
+    .products .article__name, 
+    .products .article__price {
+        font-size: 1.9em;
+    }
+
+
+    .grafico {
+        display: none;
+    }
+
     /* NOSOTROS */
 
     .us {
