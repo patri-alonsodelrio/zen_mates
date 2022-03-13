@@ -455,9 +455,22 @@ footer p {
     font-weight: 600;
 }
 
+/* BOOTSTRAP NORAMLIZE */
+
+.carousel {
+    z-index: -1;
+    width: 60%;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 768px) {
+
+    /* BOOTSTRAP NORMALIZE */
+
+    .carousel {
+        width: 75%;
+    }
 
     /* HEADER */
 
