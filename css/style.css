@@ -87,7 +87,7 @@ a:hover {
     justify-content: flex-end;
 }
 
-.container {
+.container-wid {
     max-width: 1360px;
     margin: 0 auto;
 }
@@ -254,7 +254,7 @@ header .menu .menu__item a {
     height: 6rem;
     box-shadow: 0 -3px 2px -2px rgb(0 0 0 / 20%);
     justify-content: center;
-    gap: .7rem; 
+    gap: .7rem;
     padding: .7rem 0;
 }
 
@@ -413,7 +413,7 @@ header .menu .menu__item a {
 }
 
 
-.input-text { 
+.input-text {
     width: 100%;
     border: none;
     padding: 1.5rem;
@@ -460,7 +460,7 @@ footer p {
 @media (max-width: 768px) {
 
     /* HEADER */
-    
+
 
     header .navbar {
         flex-wrap: wrap;
@@ -545,10 +545,13 @@ footer p {
 }
 
 @media (max-width: 480px) {
-    
+
+    /*  NORMALICE BOOTSTRAP */
+
+
     /* HEADER */
     header .menu {
-        flex-direction: column;
+        flex-direction: column!important; /* Con esto normalice bootstrap en cel */
         align-items: center;
     }
 
@@ -557,14 +560,14 @@ footer p {
     }
 
     /* MAIN HOME */
-    
+
     .main .main__img {
         min-width: auto;
         width: 100%;
     }
 
     main .about {
-        flex-direction: column;
+        flex-direction: column!important; /* Con esto normalice bootstrap en cel */
         gap: 5rem;
     }
 
@@ -579,7 +582,7 @@ footer p {
         flex-direction: column;
     }
 
-    .container {
+    .container-wid {
         margin: 0 3rem;
     }
 
@@ -606,7 +609,7 @@ footer p {
 
     /* Productos  */
 
-    .container {
+    .container-wid {
         margin: 0 2rem  ;
     }
 
@@ -619,7 +622,7 @@ footer p {
         height: 7rem;
     }
 
-    .products .article__name, 
+    .products .article__name,
     .products .article__price {
         font-size: 1.9em;
     }
