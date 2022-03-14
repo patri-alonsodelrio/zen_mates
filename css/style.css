@@ -30,9 +30,9 @@ html {
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    background-image: linear-gradient(to right bottom, #f1f1f1, #f4f4f4, #f8f8f8, #fbfbfb, #ffffff);
-    width: 100%;
-    /* background-color: var(--principal);  */
+    /* background-image: linear-gradient(to right bottom, #f1f1f1, #f4f4f4, #f8f8f8, #fbfbfb, #ffffff);
+    width: 100%; */
+    background-color: var(--principal)!important; 
     min-height: 100vh;
     font-family: var(--font-primary); /* LO NORMALICE PARA BOOTSTRAP */
 }
@@ -61,7 +61,7 @@ ul {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none!important;
     display: inline-block;
 }
 
@@ -332,6 +332,41 @@ header .menu .menu__item a {
 
 /* INICIO BOOTSTRAP */
 
+.btnes {
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+
+}
+.btnes .btn-primary {
+    background-color: var(--principal);
+    border-color: var(--principal);
+    color: var(--font-black);
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 23rem;
+    text-align: center;
+    border: none;
+    font-family: var(--font-primary)!important;
+    border: solid 2px var(--principal);
+    transition: border-color .3s ease-in-out;
+    padding: .5rem;
+}
+
+.btnes .btn-primary:hover {
+    border-color: var(--font-grey);
+    background-color: var(--principal);
+    color: var(--font-black);
+}
+
+.btnes .btn-primary:active {
+    background-color: var(--principal);
+    color: var(--font-black);
+} 
 
 /* CIERRE BOOTSTRAP */
 
