@@ -97,7 +97,7 @@ a:hover {
 
 header {
     background-color: var(--secondary);
-    position: sticky;
+    /* position: sticky; */
     top: -1px;
     box-shadow: 0px 0px 8px 0 rgb(0 0 0 / 20%);
     margin-bottom: 2rem;
@@ -329,6 +329,11 @@ header .menu .menu__item a {
 }
 
 /* NOSOTROS */
+
+/* INICIO BOOTSTRAP */
+
+
+/* CIERRE BOOTSTRAP */
 
 .us {
     gap: 5rem;
