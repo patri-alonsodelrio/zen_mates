@@ -85,6 +85,7 @@ a:hover {
 }
 
 .align-right {
+    display: flex;
     justify-content: flex-end;
 }
 
@@ -272,6 +273,36 @@ header .menu .menu__item a {
 
 /* Productos */
 
+/* Productos bootstrap */
+
+    .article .article__information {
+        flex-flow: nowrap;
+    }
+
+    .article .article__name {
+        color: var(--font-grey);
+    }
+
+    .article__information p {
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+
+    .article .dropdown {
+        padding-right: 0.9rem;
+    }
+    
+    .article .dropdown button {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .article .dropdown .dropdown-menu .dropdown-item{
+        font-weight: bold;
+    }
+
+/* cierre bootstrap */
+
 .products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -291,10 +322,10 @@ header .menu .menu__item a {
 }
 
 .article .article__information {
-    height: 6rem;
+    height: 7.5rem;
     box-shadow: 0 -3px 2px -2px rgb(0 0 0 / 20%);
     justify-content: center;
-    gap: .7rem;
+    /* gap: .7rem;  COMENTO PARA BOOTSTRAP */
     padding: .7rem 0;
 }
 
@@ -748,7 +779,7 @@ footer p {
     }
 
     .products .article__information {
-        height: 7rem;
+        height: 9rem; /*le agrregie 2 rem por bootstrap */
     }
 
     .products .article__name,
