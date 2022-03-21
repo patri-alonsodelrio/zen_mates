@@ -677,6 +677,13 @@ footer p {
 
 @media (max-width: 480px) {
 
+    /* BOOTSTRAP NORMALIZE */
+
+    .carousel {
+        width: 100%;
+    }
+    
+
     /*  NORMALICE BOOTSTRAP */
 
     .offcanvas-body .location {
