@@ -98,12 +98,11 @@ a:hover {
 
 header {
     background-color: var(--secondary);
-    /* position: sticky; */
+    position: sticky;
     top: -1px;
     box-shadow: 0px 0px 8px 0 rgb(0 0 0 / 20%);
     margin-bottom: 2rem;
     font-family: var(--font-primary);
-    /* LO NORMALICE PARA BOOTSTRAP */
 }
 
 header .navbar {
@@ -201,7 +200,7 @@ header .menu .menu__item a {
 
 /* BOOTSTRAP */
 
-.accordion {
+/* .accordion {
     display: flex;
     flex-direction: column;
     gap: 10rem;
@@ -229,7 +228,7 @@ header .menu .menu__item a {
 .accordion-body .services__picture img {
     width: 6rem;
     ;
-}
+} */
 
 
 /* cierre bootstrap */
@@ -481,27 +480,6 @@ header .menu .menu__item a {
 
 /* Formulario Contacto */
 
-/* Form BOOTSTRAP */
-
-.mb-3 label {
-    color: var(--principal);
-    margin-bottom: 1rem;
-    font-size: 1.6em;
-    display: block;
-}
-
-.formulario .contenedor-campos .form-floating label {
-    color: var(--font-grey);
-    font-size: 1.1em;
-}
-
-.separate {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
 .formulario {
     /* background-color: var(--font-grey);  LO COMENTO PARA DESAFIO*/
     background-image: linear-gradient(to bottom, #999595, #8a8686, #7a7878, #6b6a6a, #5d5c5c);
@@ -562,7 +540,7 @@ header .menu .menu__item a {
 .boton {
     background-color: var(--principal);
     color: var(--font-grey);
-    /* padding: 1rem 3rem; */
+    padding: 1rem 3rem;
     margin-top: 3rem;
     font-size: 2rem;
     text-decoration: none;
