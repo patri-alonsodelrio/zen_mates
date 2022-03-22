@@ -1,0 +1,62 @@
+/* Normalize */
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Globales */
+
+html {
+    font-size: 62.5%;
+    font-family: var(--font-primary);
+    color: var(--font-grey);
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* background-image: linear-gradient(to right bottom, #f1f1f1, #f4f4f4, #f8f8f8, #fbfbfb, #ffffff);
+    width: 100%; */
+    background-color: var(--principal) !important;
+    min-height: 100vh;
+    font-family: var(--font-primary);
+    /* LO NORMALICE PARA BOOTSTRAP */
+}
+
+h1 {
+    color: var(--font-black);
+    font-weight: bold;
+    font-size: 3.4em;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.6em;
+    color: var(--font-black);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+    display: inline-block;
+    &:hover {
+        color: var(--font-grey);
+    }
+    &:visited {
+        color: var(--font-grey) 
+    }
+}

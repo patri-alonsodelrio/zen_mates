@@ -1,0 +1,41 @@
+/* Header & Navbar */
+
+header {
+    background-color: $--secondary ;
+    position: sticky;
+    top: -1px;
+    box-shadow: 0px 0px 8px 0 rgb(0 0 0 / 20%);
+    margin-bottom: 2rem;
+    font-family: $--font-primary;
+    .navbar {
+        align-items: center;
+        justify-content: center;
+    }
+    .logo {
+        flex-basis: 30%;
+        &__img {
+            width: 4rem;
+            padding: 1rem 0;
+        }
+    }
+    .menu {
+        flex-basis: 40%;
+        justify-content: space-between;
+        font-size: 1.6em;
+        text-transform: uppercase;
+        font-weight: 600;
+        &__item {
+            border: solid 2px $--secondary;
+            transition: border-color .3s ease-in-out;
+            padding: .5rem;
+            &:hover {
+                border-color: $--font-grey;
+            }
+        }
+            a {
+                color: $font-grey;
+            }
+    }
+}
+
+
