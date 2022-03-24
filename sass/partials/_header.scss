@@ -38,4 +38,36 @@ header {
     }
 }
 
+@media (max-width: 768px) {
 
+    header {
+        .navbar {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .logo {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+
+}
+
+@media (max-width: 480px) {
+
+    /* BOOTSTRAP NORMALIZE */
+
+
+    /* HEADER */
+    header {
+        .menu {
+            flex-direction: column !important;
+            /* Con esto normalice bootstrap en cel */
+            align-items: center;
+        }
+        .logo__img {
+            width: 7rem;
+        }
+    }
+}

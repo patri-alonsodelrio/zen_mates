@@ -1,0 +1,19 @@
+/* VARIABLES */
+@import "/sass/misc/variables";
+
+// GLOBALES 
+@import "/sass/misc/normalize";
+@import "/sass/misc/mixins";
+
+// PARTIALS
+
+@import "/sass/partials/header";
+@import "/sass/partials/footer";
+
+// VIEWS 
+
+@import "/sass/views/home";
+@import "/sass/views/Servicios";
+@import "/sass/views/Productos";
+@import "/sass/views/nosotros";
+@import "/sass/views/contacto";
