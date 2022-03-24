@@ -92,8 +92,8 @@ header {
       padding: .5rem; }
       header .menu__item:hover {
         border-color: #7a7a7a; }
-    header .menu a {
-      color: #7a7a7a; }
+      header .menu__item a {
+        color: #7a7a7a; }
 
 @media (max-width: 768px) {
   header .navbar {

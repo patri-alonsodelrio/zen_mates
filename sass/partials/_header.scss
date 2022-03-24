@@ -29,10 +29,11 @@ header {
             &:hover {
                 border-color: $--font-grey;
             }
-        }
             a {
                 color: $--font-grey;
             }
+        }
+
     }
 }
 
@@ -60,8 +61,10 @@ header {
             /* Con esto normalice bootstrap en cel */
             align-items: center;
         }
-        .logo__img {
-            width: 7rem;
+        .logo {
+            &__img {
+                width: 7rem;
+            }
         }
     }
 }
