@@ -4,7 +4,7 @@ header {
     background-color: $--secondary ;
     position: sticky;
     top: -1px;
-    box-shadow: 0px 0px 8px 0 rgb(0 0 0 / 20%);
+    box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.20);
     margin-bottom: 2rem;
     font-family: $--font-primary;
     .navbar {
@@ -33,7 +33,7 @@ header {
             }
         }
             a {
-                color: $font-grey;
+                color: $--font-grey;
             }
     }
 }

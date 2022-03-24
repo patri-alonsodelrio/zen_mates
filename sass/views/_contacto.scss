@@ -1,7 +1,5 @@
 .formulario {
-    /* background-color: var(--font-grey);  LO COMENTO PARA DESAFIO*/
-    background-image: linear-gradient(to bottom, #999595, #8a8686, #7a7878, #6b6a6a, #5d5c5c);
-    width: min(60rem, 100%);
+    background-color: var(--font-grey);
     margin: 0 auto;
     padding: 2rem;
     border-radius: 1rem;
@@ -14,7 +12,7 @@
         text-transform: uppercase;
         font-weight: 700;
         margin-bottom: 2rem;
-        color: var(--font-black)
+        color: $--font-black;
     }
     .contenedor-campos {
         display: grid;
@@ -33,7 +31,7 @@
                 height: 20rem;
             }
             label {
-                color: var(--principal);
+                color: $--principal;
                 margin-bottom: 1rem;
                 font-size: bold;
                 display: block;
@@ -51,8 +49,8 @@
 }
 
 .boton {
-    background-color: var(--principal);
-    color: var(--font-grey);
+    background-color: $--principal;
+    color: $--font-grey;
     padding: 1rem 3rem;
     margin-top: 3rem;
     font-size: 2rem;
@@ -68,3 +66,16 @@
         cursor: pointer;
     }
 }
+
+@media (max-width: 768px) {
+    .contenedor-campos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .separate {
+        padding: 0 2rem;
+
+    }
+}
+

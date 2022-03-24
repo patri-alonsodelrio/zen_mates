@@ -12,8 +12,8 @@
 
 html {
     font-size: 62.5%;
-    font-family: var(--font-primary);
-    color: var(--font-grey);
+    font-family: $--font-primary;
+    color: $--font-grey;
 }
 
 body {
@@ -21,14 +21,14 @@ body {
     grid-template-rows: auto 1fr auto;
     /* background-image: linear-gradient(to right bottom, #f1f1f1, #f4f4f4, #f8f8f8, #fbfbfb, #ffffff);
     width: 100%; */
-    background-color: var(--principal) !important;
+    background-color: $--principal !important;
     min-height: 100vh;
-    font-family: var(--font-primary);
+    font-family: $--font-primary;
     /* LO NORMALICE PARA BOOTSTRAP */
 }
 
 h1 {
-    color: var(--font-black);
+    color: $--font-black;
     font-weight: bold;
     font-size: 3.4em;
     text-align: center;
@@ -37,7 +37,7 @@ h1 {
 h2 {
     text-align: center;
     font-size: 2.6em;
-    color: var(--font-black);
+    color: $--font-black;
     font-weight: bold;
     margin-bottom: 2rem;
 }
@@ -54,9 +54,9 @@ a {
     text-decoration: none !important;
     display: inline-block;
     &:hover {
-        color: var(--font-grey);
+        color: $--font-grey;
     }
     &:visited {
-        color: var(--font-grey) 
+        color: $--font-grey; 
     }
 }
