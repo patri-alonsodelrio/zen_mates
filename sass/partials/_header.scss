@@ -32,6 +32,10 @@ header {
                 color: $--font-grey;
             }
         }
+        .menu__item--active {
+            @extend .menu__item;
+            border-bottom: 2px solid $--font-grey;
+        }
 
     }
 }

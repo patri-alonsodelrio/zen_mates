@@ -50,16 +50,6 @@ a {
   a:visited {
     color: #7a7a7a; }
 
-/*
-.flex-row {
-    display: flex;
-}
-
-.flex-column {
-    display: flex;
-    flex-flow: column wrap;
-}
-*/
 .container-wid {
   max-width: 1360px;
   margin: 0 auto; }
@@ -91,14 +81,16 @@ header {
     font-size: 1.6em;
     text-transform: uppercase;
     font-weight: 600; }
-    header .menu__item {
+    header .menu__item, header .menu .menu__item--active {
       border: solid 2px #ffff;
       transition: border-color .3s ease-in-out;
       padding: .5rem; }
-      header .menu__item:hover {
+      header .menu__item:hover, header .menu .menu__item--active:hover {
         border-color: #7a7a7a; }
-      header .menu__item a {
+      header .menu__item a, header .menu .menu__item--active a {
         color: #7a7a7a; }
+    header .menu .menu__item--active {
+      border-bottom: 2px solid #7a7a7a; }
 
 @media (max-width: 768px) {
   header .navbar {
