@@ -6,7 +6,8 @@ header {
     margin-bottom: 2rem;
     font-family: map-get($fonts, sans);
     .navbar {
-        @include flex(row, center, center, 0)
+        @include flex(row, center, center, 0);
+        padding: 0;
     }
     .logo {
         flex-basis: 30%;
