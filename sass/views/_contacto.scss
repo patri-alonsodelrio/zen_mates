@@ -1,5 +1,8 @@
 .formulario {
-    background-color: var(--font-grey);
+    // background-color: $--font-grey;
+    background-image: linear-gradient(to bottom, #999595, #8a8686, #7a7878, #6b6a6a, #5d5c5c);
+    max-width: 60rem;
+    width: 100%;
     margin: 0 auto;
     padding: 2rem;
     border-radius: 1rem;
@@ -68,10 +71,14 @@
 }
 
 @media (max-width: 768px) {
-    .contenedor-campos {
-        display: flex;
-        flex-direction: column;
+
+    .formulario {
+        .contenedor-campos {
+            display: flex;
+            flex-direction: column;
+        }
     }
+
 
     .separate {
         padding: 0 2rem;
