@@ -198,7 +198,8 @@ footer {
     .services__information .services__description {
       text-align: justify;
       font-size: 1.6em;
-      align-items: flex-end; }
+      align-items: flex-end;
+      font-family: "Roboto"; }
   .services__picture {
     height: 15rem;
     width: 15rem;
