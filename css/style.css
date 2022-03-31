@@ -163,7 +163,7 @@ footer {
   .carousel {
     width: 75%; }
   main .about {
-    flex-direction: column;
+    flex-direction: column !important;
     gap: 5rem; }
     main .about__img img {
       width: 25rem; } }
