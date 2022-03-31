@@ -20,7 +20,7 @@ body {
     width: 100%; */
     background-color: $--principal !important;
     min-height: 100vh;
-    font-family: $--font-primary;
+    font-family: map-get($fonts, sans);
     /* LO NORMALICE PARA BOOTSTRAP */
 }
 

@@ -19,7 +19,7 @@
         width: 23rem;
         text-align: center;
         border: none;
-        font-family: $--font-primary !important;
+        font-family: map-get($fonts, sans) !important;
         border: solid 2px $--principal;
         transition: border-color .3s ease-in-out;
         padding: .5rem;
