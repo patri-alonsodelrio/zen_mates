@@ -14,10 +14,9 @@
             box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.20);
         }   
         &__information {
-            flex-flow: nowrap;
+            @include flex(column, center, null, null);
             height: 7.5rem;
             box-shadow: 0px -3px 2px -2px rgba(0, 0, 0, 0.20);    
-            justify-content: center;
             /* gap: .7rem;  COMENTO PARA BOOTSTRAP */
             padding: .7rem 0;
             p {
@@ -35,6 +34,7 @@
                 color: $--font-black;
             }
             .dropdown {
+                @include flex(null, flex-end, null, null);
                 padding-right: 0.9rem;
                 button {
                     text-transform: uppercase;
@@ -94,7 +94,7 @@
             flex-direction: column;
             .article {
                 &__information {
-                height: 8rem;
+                height: 9rem;
                     .article__name {
                         font-size: 1.9em;
                     }

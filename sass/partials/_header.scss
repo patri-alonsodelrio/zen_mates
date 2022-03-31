@@ -6,8 +6,7 @@ header {
     margin-bottom: 2rem;
     font-family: map-get($fonts, sans);
     .navbar {
-        align-items: center;
-        justify-content: center;
+        @include flex(row, center, center, 0)
     }
     .logo {
         flex-basis: 30%;
@@ -17,8 +16,8 @@ header {
         }
     }
     .menu {
+        @include flex(row, space-between, null, null);
         flex-basis: 40%;
-        justify-content: space-between;
         font-size: 1.6em;
         text-transform: uppercase;
         font-weight: 600;
@@ -41,12 +40,11 @@ header {
 
     header {
         .navbar {
+            @include flex(null, center, null, null);
             flex-wrap: wrap;
-            justify-content: center;
         }
         .logo {
-            display: flex;
-            justify-content: center;
+            @include flex(null, center, null, null);
         }
     }
 
@@ -57,9 +55,7 @@ header {
 
     header {
         .menu {
-            flex-direction: column !important;
-            /* Con esto normalice bootstrap en cel */
-            align-items: center;
+            @include flex(column !important, null, center, null);
         }
         .logo {
             &__img {

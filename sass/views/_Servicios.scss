@@ -1,11 +1,17 @@
 /* Servicios */
 
+.container {
+    &-services {
+        @include flex(column, null, null, null)
+    }
+}
 .services {
+    @include flex(row, space-evenly, null, null);
     justify-content: space-evenly;
     margin: 3rem 0;
     &__information {
+        @include flex(column, null, null, 3rem);
         flex-basis: 50%;
-        gap: 3rem;
         .services__title {
             text-align: center;
             font-size: 2.6em;
@@ -18,13 +24,11 @@
         }
     }
     &__picture {
+        @include flex(row, space-evenly, center, null);
         height: 15rem;
         width: 15rem;
         background-color: $--secondary;
         border-radius: 50%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
         box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.60);
         img {
             width: 9rem;
@@ -40,17 +44,13 @@
     }
 
     .services {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 3rem;
+        @include flex(column-reverse, null, center, 3rem);
         padding: 2rem;
     }
 }
 
 @media (max-width: 480px) {
     .container-services {
-        display: flex;
-        flex-direction: column;
+        @include flex(column, null, null, null);
     }
 }

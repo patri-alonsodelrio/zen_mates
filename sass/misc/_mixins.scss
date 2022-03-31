@@ -1,4 +1,4 @@
-
+/*
 .flex-row {
     display: flex;
 }
@@ -7,10 +7,14 @@
     display: flex;
     flex-flow: column wrap;
 }
+*/
 
-.align-right {
+@mixin flex($direction: row, $justify: flex-start, $align: flex-start, $gap: 0) {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
 }
 
 .container-wid {

@@ -51,6 +51,11 @@
     border-radius: 1rem;
 }
 
+.enviar {
+    @include flex(row, flex-end, null, null);
+}
+
+
 .boton {
     background-color: $--principal;
     color: $--font-grey;
@@ -74,8 +79,7 @@
 
     .formulario {
         .contenedor-campos {
-            display: flex;
-            flex-direction: column;
+            @include flex(column, null, null, null);
         }
     }
 

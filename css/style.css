@@ -50,17 +50,16 @@ a {
   a:visited {
     color: #7a7a7a; }
 
+/*
 .flex-row {
-  display: flex; }
+    display: flex;
+}
 
 .flex-column {
-  display: flex;
-  flex-flow: column wrap; }
-
-.align-right {
-  display: flex;
-  justify-content: flex-end; }
-
+    display: flex;
+    flex-flow: column wrap;
+}
+*/
 .container-wid {
   max-width: 1360px;
   margin: 0 auto; }
@@ -74,16 +73,21 @@ header {
   margin-bottom: 2rem;
   font-family: "Quicksand"; }
   header .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    justify-content: center; }
+    gap: 0; }
   header .logo {
     flex-basis: 30%; }
     header .logo__img {
       width: 4rem;
       padding: 1rem 0; }
   header .menu {
-    flex-basis: 40%;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    flex-basis: 40%;
     font-size: 1.6em;
     text-transform: uppercase;
     font-weight: 600; }
@@ -98,21 +102,26 @@ header {
 
 @media (max-width: 768px) {
   header .navbar {
-    flex-wrap: wrap;
-    justify-content: center; }
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
   header .logo {
     display: flex;
     justify-content: center; } }
 
 @media (max-width: 480px) {
   header .menu {
+    display: flex;
     flex-direction: column !important;
-    /* Con esto normalice bootstrap en cel */
     align-items: center; }
   header .logo__img {
     width: 7rem; } }
 
 footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   align-items: center;
   justify-content: center;
   height: 10vh;
@@ -125,9 +134,11 @@ footer {
 
 /* VIEWS */
 .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 5rem;
-  padding: 2rem;
-  align-items: center; }
+  padding: 2rem; }
   .main .carousel {
     z-index: -1;
     width: 60%; }
@@ -140,10 +151,14 @@ footer {
       height: 100%;
       border-radius: 5px; }
   .main .about {
+    display: flex;
+    flex-direction: row;
     align-items: center; }
     .main .about__text {
-      flex-basis: 50%;
-      gap: 4rem; }
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      flex-basis: 50%; }
       .main .about__text h2 {
         text-transform: uppercase;
         text-align: center;
@@ -154,8 +169,10 @@ footer {
         text-align: justify;
         font-size: 1.7em; }
     .main .about__img {
-      flex-basis: 50%;
+      display: flex;
+      flex-direction: row;
       justify-content: flex-end;
+      flex-basis: 50%;
       opacity: .7;
       z-index: -1; }
       .main .about__img img {
@@ -164,34 +181,42 @@ footer {
 @media (max-width: 768px) {
   .carousel {
     width: 75%; }
-  main .about {
+  .main .about {
+    display: flex;
     flex-direction: column;
     gap: 5rem; }
-    main .about__img img {
+    .main .about__img img {
       width: 25rem; } }
 
 @media (max-width: 480px) {
-  .main {
-    /* BOOTSTRAP NORMALIZE */ }
-    .main__img {
-      min-width: auto;
-      width: 100%; }
-    .main .about {
-      flex-direction: column !important;
-      /* Con esto normalice bootstrap en cel */
-      gap: 5rem; }
-      .main .about__img img {
-        width: 20rem; }
-    .main .carousel {
-      width: 100%; } }
+  .main__img {
+    min-width: auto;
+    width: 100%; }
+  .main .about {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem; }
+    .main .about__img img {
+      width: 20rem; }
+  .main .carousel {
+    width: 100%; } }
 
 /* Servicios */
+.container-services {
+  display: flex;
+  flex-direction: column; }
+
 .services {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   justify-content: space-evenly;
   margin: 3rem 0; }
   .services__information {
-    flex-basis: 50%;
-    gap: 3rem; }
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    flex-basis: 50%; }
     .services__information .services__title {
       text-align: center;
       font-size: 2.6em; }
@@ -201,13 +226,14 @@ footer {
       align-items: flex-end;
       font-family: "Roboto"; }
   .services__picture {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     height: 15rem;
     width: 15rem;
     background-color: #ffff;
     border-radius: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.6); }
     .services__picture img {
       width: 9rem; }
@@ -243,10 +269,11 @@ footer {
     .products .article img {
       box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.2); }
     .products .article__information {
-      flex-flow: nowrap;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       height: 7.5rem;
       box-shadow: 0px -3px 2px -2px rgba(0, 0, 0, 0.2);
-      justify-content: center;
       /* gap: .7rem;  COMENTO PARA BOOTSTRAP */
       padding: .7rem 0; }
       .products .article__information p {
@@ -261,6 +288,8 @@ footer {
         font-weight: bold;
         color: #232323; }
       .products .article__information .dropdown {
+        display: flex;
+        justify-content: flex-end;
         padding-right: 0.9rem; }
         .products .article__information .dropdown button {
           text-transform: uppercase;
@@ -303,7 +332,7 @@ footer {
     display: flex;
     flex-direction: column; }
     .products .article__information {
-      height: 8rem; }
+      height: 9rem; }
       .products .article__information .article__name {
         font-size: 1.9em; }
       .products .article__information .article__price {
@@ -316,9 +345,11 @@ footer {
 /* NOSOTROS */
 /* INICIO BOOTSTRAP */
 .btnes {
-  gap: 10rem;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  gap: 10rem; }
   .btnes .btn-primary {
     background-color: #f1f1f1;
     border-color: #f1f1f1;
@@ -348,13 +379,17 @@ footer {
 
 /* CIERRE BOOTSTRAP */
 .us {
+  display: flex;
+  flex-direction: column;
   gap: 5rem;
   margin: 3rem 0;
   padding: 0 2rem; }
   .us__information {
-    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     gap: 3rem;
-    justify-content: center; }
+    flex-basis: 50%; }
     .us__information .us__title {
       font-size: 2.6em;
       text-align: center; }
@@ -371,6 +406,8 @@ footer {
     background-image: url(../Images/272403231_982318905692871_7304337415488503772_n.webp.jpg); }
 
 .location {
+  display: flex;
+  flex-direction: row;
   gap: 5rem;
   margin: 3rem 0;
   padding: 0 2rem; }
@@ -387,9 +424,11 @@ footer {
       width: 100%;
       height: 100%; }
   .location__information {
-    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     gap: 3rem;
-    justify-content: center; }
+    flex-basis: 50%; }
     .location__information .location__title {
       font-size: 2.6em;
       text-align: center; }
@@ -398,10 +437,12 @@ footer {
 
 @media (max-width: 768px) {
   .us {
+    display: flex;
     flex-direction: column;
     gap: 3rem;
     padding: 0 3rem; }
   .location {
+    display: flex;
     flex-direction: column-reverse;
     gap: 3rem;
     padding: 0 3rem; }
@@ -462,6 +503,11 @@ footer {
   border: none;
   padding: 1.5rem;
   border-radius: 1rem; }
+
+.enviar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
 
 .boton {
   background-color: #f1f1f1;
