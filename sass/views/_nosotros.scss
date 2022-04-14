@@ -30,6 +30,13 @@
             background-color: $--principal;
             color: $--font-black;
         }
+        &:focus {
+            background-color: $--principal;
+            border-color: $--font-black;
+            color: $--font-black;
+            border: none;
+            box-shadow: none;
+        }
     }
     .offcanvas-bottom.show {
         height: 40rem;
