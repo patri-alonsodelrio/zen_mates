@@ -1,9 +1,11 @@
+/* HOME */
+
 .main {
     @include flex(column, null, center, 5rem);
     padding: 2rem;
     .carousel {
         z-index: -1;
-        width: 60%;
+        width: 65%;
     }
     &__img {
         box-shadow: inset 0px 0px 15px 0 rgba(0, 0, 0, 0.60);
@@ -28,7 +30,7 @@
                 font-weight: 600;
             }
             p {
-                text-align: justify;
+                text-align: center;
                 font-size: 1.7em;
             }
         }    
@@ -46,8 +48,8 @@
 
 @media (max-width: 768px) {
 
-    .carousel {
-        width: 75%;
+    .main .carousel {
+        width: 100%;
     }
 
     

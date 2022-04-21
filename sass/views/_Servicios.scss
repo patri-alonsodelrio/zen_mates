@@ -19,10 +19,10 @@
             font-weight: bold;
         }
         .services__description {
-            text-align: justify;
+            text-align: center;
             font-size: 1.6em;
             align-items: flex-end;
-            font-family: map-get($fonts, roboto);
+            font-family: map-get($fonts, sans);
         }
     }
     &__picture {

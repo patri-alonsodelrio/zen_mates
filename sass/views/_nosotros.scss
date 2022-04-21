@@ -1,7 +1,4 @@
-/* NOSOTROS */
-
-/* INICIO BOOTSTRAP */
-
+/* Nosotros */
 .btnes {
     @include flex(column, center, center, 10rem);
     .btn-primary {
@@ -43,12 +40,12 @@
 .offcanvas-body {
     display:flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 .offcanvas-bottom {
-    height: 80vh!important;
+    height: 50vh!important;
 }
-
-/* CIERRE BOOTSTRAP */
 
 .us {
     @include flex(column, null, null, 5rem);
@@ -63,6 +60,7 @@
         }
         .us__description {
             font-size: 1.6em;
+            text-align: center;
         }
     }
     &__img {
@@ -76,8 +74,6 @@
             background-image: url(../Images/272403231_982318905692871_7304337415488503772_n.webp.jpg);
     }
 }
-
-
 
 .location {
     @include flex(row, null, null, 5rem);
@@ -106,6 +102,7 @@
         }
         .location__description {
             font-size: 1.6em;
+            text-align: center;
         }
     }
 

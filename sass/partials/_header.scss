@@ -1,7 +1,7 @@
+/* Header */
+
 header {
     background-color: $--secondary ;
-    /* position: sticky; */
-    top: -1px;
     box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.20);
     margin-bottom: 2rem;
     font-family: map-get($fonts, sans);
@@ -23,12 +23,7 @@ header {
         text-transform: uppercase;
         font-weight: 600;
         &__item {
-            // border: solid 2px $--secondary;
-            // transition: border-color .3s ease-in-out;
             padding: .5rem;
-            // &:hover {
-            //     border-color: $--font-grey;
-            // }
             a {
                 color: $--font-grey;
                 position: relative;

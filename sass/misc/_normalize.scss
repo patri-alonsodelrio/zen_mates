@@ -16,12 +16,9 @@ html {
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    /* background-image: linear-gradient(to right bottom, #f1f1f1, #f4f4f4, #f8f8f8, #fbfbfb, #ffffff);
-    width: 100%; */
     background-color: $--principal !important;
     min-height: 100vh;
     font-family: map-get($fonts, sans);
-    /* LO NORMALICE PARA BOOTSTRAP */
 }
 
 h1 {

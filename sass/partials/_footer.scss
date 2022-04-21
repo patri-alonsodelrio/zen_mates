@@ -1,14 +1,14 @@
-
+/* Footer */
 footer {
     @include flex(row, center, center, null);
     align-items: center;
     justify-content: center;
     height: 10vh;
     background-color: $--principal;
-    font-family: map-get($fonts, roboto);
+    font-family: map-get($fonts, sans);
     p {
         text-align: center;
         font-size: 1.4em;
-        font-weight: 600;
+        font-weight: 700;
     }
 }
