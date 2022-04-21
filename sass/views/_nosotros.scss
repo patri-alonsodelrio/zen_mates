@@ -38,9 +38,14 @@
             box-shadow: none;
         }
     }
-    .offcanvas-bottom.show {
-        height: 40rem;
-    }
+}
+
+.offcanvas-body {
+    display:flex;
+    align-items: center;
+}
+.offcanvas-bottom {
+    height: 80vh!important;
 }
 
 /* CIERRE BOOTSTRAP */
@@ -119,7 +124,9 @@
             @include flex(null, center, null, null);
         }
     }
-
+    .offcanvas-body {
+        display:flex;
+    }
 }
 
 @media (max-width: 480px) {
