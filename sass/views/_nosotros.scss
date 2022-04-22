@@ -71,7 +71,7 @@
             background-size: cover;
             background-position: center;
             box-shadow: inset 2px 2px 8px 0 rgba(0, 0, 0, 0.20);
-            background-image: url(../Images/272403231_982318905692871_7304337415488503772_n.webp.jpg);
+            background-image: url(../Images/ImagenMatePlaya.jpg);
     }
 }
 
@@ -129,15 +129,5 @@
 @media (max-width: 480px) {
     .us {
         padding: 0 3rem;
-        &__img {
-            flex-basis: 40%;
-            width: 100%;
-            min-height: 26rem;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            box-shadow: inset 2px 2px 8px 0 rgba(0, 0, 0, 0.20);
-            background-image: url(../Images/272403231_982318905692871_7304337415488503772_n.webp.jpg);
-        }
     }
 }

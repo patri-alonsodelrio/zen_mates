@@ -325,13 +325,13 @@ footer {
   box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2); }
 
 .grafico--amigos {
-  background-image: url(../Images/aballay-009-tomandomate.jpg);
+  background-image: url(../Images/Grafico-amigos.jpg);
   grid-row: 5 / 6;
   grid-column: 2/ 4; }
 
 .grafico--mate {
   grid-row: 2 / 3;
-  background-image: url(../Images/cocinillas_222490552_116348469_1706x960.jpg);
+  background-image: url(../Images/Grafico-mate.jpg);
   background-position: right; }
 
 @media (max-width: 768px) {
@@ -431,7 +431,7 @@ footer {
     background-size: cover;
     background-position: center;
     box-shadow: inset 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
-    background-image: url(../Images/272403231_982318905692871_7304337415488503772_n.webp.jpg); }
+    background-image: url(../Images/ImagenMatePlaya.jpg); }
 
 .location {
   display: flex;
@@ -483,16 +483,7 @@ footer {
 
 @media (max-width: 480px) {
   .us {
-    padding: 0 3rem; }
-    .us__img {
-      flex-basis: 40%;
-      width: 100%;
-      min-height: 26rem;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      box-shadow: inset 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
-      background-image: url(../Images/272403231_982318905692871_7304337415488503772_n.webp.jpg); } }
+    padding: 0 3rem; } }
 
 .formulario {
   background-image: linear-gradient(to bottom, #999595, #8a8686, #7a7878, #6b6a6a, #5d5c5c);
