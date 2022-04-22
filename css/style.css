@@ -143,7 +143,6 @@ footer {
   gap: 5rem;
   padding: 2rem; }
   .main .carousel {
-    z-index: -1;
     width: 65%; }
   .main__img {
     box-shadow: inset 0px 0px 15px 0 rgba(0, 0, 0, 0.6);

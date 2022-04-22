@@ -4,7 +4,6 @@
     @include flex(column, null, center, 5rem);
     padding: 2rem;
     .carousel {
-        z-index: -1;
         width: 65%;
     }
     &__img {
